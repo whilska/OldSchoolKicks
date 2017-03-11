@@ -1,0 +1,12 @@
+p {
+	font-style: normal;
+}
+table {
+	width: 100%;
+}
+th {
+	text-align: left;
+}
+#toggleSpecialsLink {
+	text-align: center;
+}

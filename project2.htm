@@ -1,0 +1,37 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<title>Old School Kicks</title>
+		<meta content="text/html;charset=utf-8" http-equiv="Content-Type">
+		<meta content="utf-8" http-equiv="encoding">
+		<link rel="stylesheet" href="project2.css">
+		<link rel="stylesheet" href="jquery-ui.min.css">
+		<script type="text/javascript" src="jquery-1.8.3.min.js"></script>
+		<script type="text/javascript" src="jquery-ui.min.js"></script>
+		<script src="validateCredentials.js"></script>
+		<script src="project2.js"></script>
+	</head>
+	<body>
+		<div id="top-panel">
+			<h1 align="center">Old School Kicks</h1>
+			<p align="center">Your one stop online store for sneakers from yesterday!</p>	
+		</div>
+		<div id="side-panel">
+			<h2 align="center">Menu</h1>
+			<a id="welcome"></a><br>
+			<a onclick="displaySpecials()">Specials</a><br> 	
+			<a onclick="loadContent('GET','home.php')">Home</a><br>  
+			<a id="logIn" onclick="logInForm()">Log In</a><br>  
+			<a id="create" onclick="createAccountForm()">Create Account</a><br>  
+			<a id="viewCart" onclick="viewCart()">View Cart</a><br>
+			<a id ="searchByBrand">Search By Brand</a><br>
+			<select class="search" onchange="searchByCategory(this.selectedIndex)"></select><br>
+			<a id="admin" onclick="adminPage()">Admin Console</a><br>
+			<a id="logOut" onclick="logOut()">Log Out</a>
+		</div>
+		<form id="content">
+			<div id="fullPic"></div>
+			<div id="contentDiv"></div>
+		</form>
+	</body>
+</html>
