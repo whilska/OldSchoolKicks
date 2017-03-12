@@ -1,6 +1,9 @@
-body {background-color: navy}
-h1 {color:yellow}
-p {color:black; font-style: italic}
+body {
+	background-color: #87cefa;
+	font-family: Arial, Helvetica, sans-serif;
+}
+h1 {color: #191970}
+p {color: #191970; font-style: italic}
 a:hover {
 	color: White;
 	cursor: pointer;
@@ -12,19 +15,19 @@ a:hover {
 }
 #top-panel
 {
-	background-color: Gray;
+	background-color: #87cefa;
 	height:10%;
 }
 #side-panel
 {
-	background-color: Gray;
+	background-color: #87cefa;
 	float: left;
 	height: 100%;
 	width: 10%;
 }
 #content
 {
-	background-color: LightBlue;
+	background-color: #fffaf0;
 	float: right;
 	width: 90%;
 	color:black;
