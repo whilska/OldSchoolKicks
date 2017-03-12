@@ -23,7 +23,7 @@
 			<a onclick="loadContent('GET','home.php')">Home</a><br>  
 			<a id="logIn" onclick="logInForm()">Log In</a><br>  
 			<a id="create" onclick="createAccountForm()">Create Account</a><br>  
-			<a id="viewCart" onclick="viewCart()">View Cart</a><br>
+			<a id="viewCart" onclick="callFunctionWithSessionCheck(viewCartAux)">View Cart</a><br>
 			<a id ="searchByBrand">Search By Brand</a><br>
 			<select class="search" onchange="searchByCategory(this.selectedIndex)"></select><br>
 			<a id="admin" onclick="adminPage()">Admin Console</a><br>

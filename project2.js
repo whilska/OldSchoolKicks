@@ -251,6 +251,7 @@ function removeMultipleFromCart() {
 	});
 }
 
+// Checks for active session, if session active then calls param ssuccessFunction
 function callFunctionWithSessionCheck(successFunction) {
 	$.ajax({
 		type: 'GET',
