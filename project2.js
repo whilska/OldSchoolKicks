@@ -1,4 +1,7 @@
 //project2.js
+
+var authServiceResource = "http://ubuntu-hilska.local:8080/OldSchoolKicksAuth";
+
 $(document).ready(function() {
 	echoGetCategories();
 	displaySpecials();
@@ -249,32 +252,6 @@ function removeMultipleFromCart() {
 
 		}
 	});
-}
-
-// Checks for active session, if session active then calls param ssuccessFunction
-function callFunctionWithSessionCheck(successFunction) {
-	$.ajax({
-		type: 'GET',
-		url: 'http://ubuntu-hilska.local:8080/OldSchoolKicksAuth/SessionServlet',
-		xhrFields: {
-			withCredentials: true
-		},
-		success: function(response) { 
-			successFunction(response)
-		}
-	});
-}
-
-function viewCartAux(response) {
-	if (response.email != null && response.email != "") {
-		$.post('viewCart.php', { email: response.email}, 
-				function(returnedData){
-					document.getElementById("contentDiv").innerHTML = returnedData;
-		});
-	}
-	else {
-		alert("Must log in to view cart");
-	}
 }
 
 function viewCart() {
